@@ -5,7 +5,7 @@ project(sample_cpp_project)
 set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
 set(CMAKE_CXX_FLAGS_RELEASE "/MT")
 # Укажите стандарт C++
-
+add_executable(main main.cpp my_add.cpp)
 include(FetchContent)
 FetchContent_Declare(
     googleTest
